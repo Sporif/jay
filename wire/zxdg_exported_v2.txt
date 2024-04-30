@@ -1,0 +1,11 @@
+# requests
+
+request destroy {
+
+}
+
+# events
+
+event handle {
+    handle: str,
+}

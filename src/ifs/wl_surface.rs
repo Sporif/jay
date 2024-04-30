@@ -13,6 +13,8 @@ pub mod xwayland_shell_v1;
 pub mod zwlr_layer_surface_v1;
 pub mod zwp_idle_inhibitor_v1;
 pub mod zwp_input_popup_surface_v2;
+pub mod zxdg_exported_v2;
+pub mod zxdg_imported_v2;
 
 use {
     crate::{

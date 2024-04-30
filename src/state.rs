@@ -185,6 +185,7 @@ pub struct State {
     pub explicit_sync_enabled: Cell<bool>,
     pub keyboard_state_ids: KeyboardStateIds,
     pub security_context_acceptors: SecurityContextAcceptors,
+    pub foreign_exports: CopyHashMap<crate::utils::opaque::Opaque, Rc<WlSurface>>,
 }
 
 // impl Drop for State {

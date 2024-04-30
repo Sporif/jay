@@ -236,6 +236,7 @@ fn start_compositor2(
         explicit_sync_enabled: Cell::new(true),
         keyboard_state_ids: Default::default(),
         security_context_acceptors: Default::default(),
+        foreign_exports: Default::default(),
     });
     state.tracker.register(ClientId::from_raw(0));
     create_dummy_output(&state);

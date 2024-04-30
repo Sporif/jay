@@ -1,0 +1,10 @@
+# requests
+
+request destroy {
+
+}
+
+request export_toplevel {
+    id: id(zxdg_exported_v2),
+    surface: id(wl_surface),
+}

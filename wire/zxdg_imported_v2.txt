@@ -1,0 +1,15 @@
+# requests
+
+request destroy {
+
+}
+
+request set_parent_of {
+    surface: id(wl_surface),
+}
+
+# events
+
+event destroyed {
+
+}

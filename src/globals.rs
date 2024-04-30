@@ -48,6 +48,8 @@ use {
             zwlr_screencopy_manager_v1::ZwlrScreencopyManagerV1Global,
             zwp_idle_inhibit_manager_v1::ZwpIdleInhibitManagerV1Global,
             zxdg_decoration_manager_v1::ZxdgDecorationManagerV1Global,
+            zxdg_exporter_v2::ZxdgExporterV2Global,
+            zxdg_importer_v2::ZxdgImporterV2Global,
             zxdg_output_manager_v1::ZxdgOutputManagerV1Global,
         },
         object::{Interface, ObjectId, Version},
@@ -194,6 +196,8 @@ impl Globals {
         add_singleton!(XdgWmDialogV1Global);
         add_singleton!(ExtTransientSeatManagerV1Global);
         add_singleton!(ZwpPointerGesturesV1Global);
+        add_singleton!(ZxdgExporterV2Global);
+        add_singleton!(ZxdgImporterV2Global);
     }
 
     pub fn add_backend_singletons(&self, backend: &Rc<dyn Backend>) {
